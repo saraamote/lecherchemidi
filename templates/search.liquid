@@ -2,11 +2,19 @@
 {% paginate search.results by search_pagination %}
 
 <div class="sixteen columns clearfix collection_nav">
+<<<<<<< HEAD
   <h1 class="collection_title {% if search.performed %}collection_title_tags{% endif %}">{{ 'general.search.title' | t }}</h1>
   {% if search.performed %}
     <ul class="collection_menu">
       <li>
         {{ 'general.search.results_count' | t: count: search.results_count }}
+=======
+  <h1 class="collection_title {% if search.performed %}collection_title_tags{% endif %}">Search</h1>
+  {% if search.performed %}
+    <ul class="collection_menu">
+      <li>
+        {{ search.results_count }} {{ search.results_count | pluralize: 'result', 'results' }} for <strong>"{{search.terms | escape}}"</strong>
+>>>>>>> GitHub/master
       </li>
     </ul>
   {% endif %}
@@ -18,7 +26,11 @@
     <br class="clear" />
     <br class="clear" />
     <div class="clearfix">
+<<<<<<< HEAD
       <p class="quote">{{ 'general.search.no_results_html' | t: terms: search.terms }}</p>
+=======
+      <p class="quote">Your search for <strong>"{{ search.terms | escape }}"</strong> did not match any results.</p>
+>>>>>>> GitHub/master
     </div>
 
     <br class="clear" />
@@ -40,7 +52,11 @@
         {% if item.featured_image %}
           <div class="four columns alpha">
              <a href="{{ item.url }}" title="{{ item.title | escape }}">
+<<<<<<< HEAD
                 <img src="{{ item.featured_image | product_img_url: 'large' }}"  alt="{{ item.title | escape }}" />
+=======
+               <img src="{{ item.featured_image | product_img_url: 'large' }}"  alt="{{ item.title | escape }}" />
+>>>>>>> GitHub/master
              </a>
           </div>
         {% endif %}
@@ -67,11 +83,19 @@
                       {% if item.compare_at_price_max > item.price %}
                         <br />
                       {% endif %}
+<<<<<<< HEAD
                       <small><em>{{ 'products.general.from' | t }}</em></small>
                     {% endif %}
                     {{ item.price_min | money }}
                   {% else %}
                     {{ item.price_min | money }} - {{ 'products.product.sold_out' | t }}
+=======
+                      <small><em>from</em></small>
+                    {% endif %}
+                    {{ item.price_min | money }}
+                  {% else %}
+                    {{ item.price_min | money }} - Sold Out
+>>>>>>> GitHub/master
                   {% endif %}
                 </span>
             </div>
@@ -108,6 +132,7 @@
   <div class="clearfix search_page">
     <br class="clear" />
     <br class="clear" />
+<<<<<<< HEAD
     <div class="ten columns offset-by-three columns center">
       <p class="quote">
         {{ 'general.search.description' | t }}
@@ -123,6 +148,17 @@
       </div>
       <div class="two columns">
         <input type="submit" name="submit" class="action_button" value="{{ 'general.search.submit' | t }}" style="margin-top:0" />
+=======
+      <form class="search" action="/search">
+        <div class="eight offset-by-three columns center">
+          {% if settings.search_option != 'everything' %}
+            <input type="hidden" name="type" value="product" />
+          {% endif %}
+          <input type="text" name="q" placeholder="Search {{ shop.name }}..." value="{% if search and search.results.first.price %}{{ search.terms }}{% endif %}" autocapitalize="off" autocomplete="off" autocorrect="off" />
+      </div>
+      <div class="two columns">
+        <input type="submit" name="submit" class="action_button" value="Search" style="margin-top:0" />
+>>>>>>> GitHub/master
       </div>
       </form>
     </div>

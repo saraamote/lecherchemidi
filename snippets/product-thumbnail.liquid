@@ -23,6 +23,7 @@
 
     <div class="info">
       <span class="title">{{ product.title }}</span>
+<<<<<<< HEAD
       {% if settings.display_vendor_collection %}
         <span itemprop="vendor">{{ product.vendor }}</span>
       {% endif %}
@@ -31,6 +32,12 @@
         {% if product.available %}
           {% if product.price_varies %}
             <small><em>{{ 'products.general.from' | t }}</em></small>
+=======
+      <span class="price {% if product.compare_at_price_max > product.price %}sale{% endif %}">
+        {% if product.available %}
+          {% if product.price_varies %}
+            <small><em>from</em></small>
+>>>>>>> GitHub/master
           {% endif %}
             {% if product.price_min > 0 %}
               {{ product.price_min | money }}
@@ -38,7 +45,11 @@
               {{ settings.free_price_text }}
             {% endif %}
         {% else %}
+<<<<<<< HEAD
           <span class="sold_out">{{ 'products.product.sold_out' | t }}</span>
+=======
+          <span class="sold_out">{{ settings.sold_out_text }} - </span>{{ product.price_min | money }}
+>>>>>>> GitHub/master
         {% endif %}
         {% if product.compare_at_price_max > product.price %}
           <span class="was_price">{{ product.compare_at_price_max | money }}</span>
@@ -46,18 +57,30 @@
       </span>
     </div>
     {% if settings.sale_banner_enabled and product.compare_at_price_max > product.price %}
+<<<<<<< HEAD
       <div class="sale_banner">{{ 'collections.general.sale' | t }}</div>
     {% endif %}
     {% for col in product.collections %}
       {% if col.handle == 'new' %}
         <div class="new_banner">{{ 'collections.general.new' | t }}</div>
+=======
+      <div class="sale_banner">Sale</div>
+    {% endif %}
+    {% for col in product.collections %}
+      {% if col.handle == 'new' %}
+        <div class="new_banner">New</div>
+>>>>>>> GitHub/master
       {% endif %}
     {% endfor %}
   </a>
 </div>
 
 {% if settings.quick_shop_enabled %}
+<<<<<<< HEAD
   <div id="product-{{ product.id }}" class="modal product-{{ product.id }}">
+=======
+  <div id="product-{{ product.id }}" class="modal">
+>>>>>>> GitHub/master
     <div class="container section" style="width: inherit">
 
       <div class="eight columns" style="padding-left: 15px">
@@ -66,6 +89,7 @@
 
       <div class="six columns">
         <h3>{{ product.title }}</h3>
+<<<<<<< HEAD
         {% if settings.display_vendor_collection %}
           <p class="vendor">
             <span class="vendor">{{ product.vendor | link_to_vendor }}</span>
@@ -81,6 +105,16 @@
               {% else %}
                 {{ settings.free_price_text }}
               {% endif %}
+=======
+
+        <p class="modal_price">
+          <span class="sold_out">{% if product.available == false %}{{ settings.sold_out_text }} - {% endif %}</span>
+          <span class="current_price {% if product.compare_at_price_max > product.price %}sale{% endif %}">
+            {% if product.price > 0 %}
+              {{ product.price | money }}
+            {% else %}
+              {{ settings.free_price_text }}
+>>>>>>> GitHub/master
             {% endif %}
           </span>
           <span class="was_price">
@@ -94,15 +128,23 @@
 
         {% if settings.product_description_position == "top" %}
           {% if settings.quick_shop_full_description %}
+<<<<<<< HEAD
             {{ product.description | split: '<!-- split -->' | first }}
 
             <a href="{{ product.url | within: collection }}" class="view_product_info" title="{{ product.title | escape }} Details">{{ 'collections.general.view_product_details_html' | t }} <span class="icon-right-arrow"></span></a>
 
+=======
+            {{ product.description }}
+>>>>>>> GitHub/master
           {% else %}
             <p>
               {{ product.description | strip_html | truncatewords: settings.description_words | replace: 'Description', '' | replace: 'Dimensions', '' | replace: 'Details', '' | replace: 'Specs', '' | replace: 'Shipping', ''  }}
 
+<<<<<<< HEAD
               <a href="{{ product.url | within: collection }}" class="view_product_info" title="{{ product.title | escape }} Details">{{ 'collections.general.view_product_details_html' | t }} <span class="icon-right-arrow"></span></a>
+=======
+              <a href="{{ product.url | within: collection }}" class="view_product_info" title="View {{ product.title | escape }} Details">Read More <span class="icon-right-arrow"></span></a>
+>>>>>>> GitHub/master
             </p>
           {% endif %}
           <hr />
@@ -114,13 +156,20 @@
           <hr />
           {% if settings.quick_shop_full_description %}
             {{ product.description | split: '<!-- split -->' | first }}
+<<<<<<< HEAD
             <a href="{{ product.url | within: collection }}" class="view_product_info" title="{{ product.title | escape }} Details">{{ 'collections.general.view_product_details_html' | t }} <span class="icon-right-arrow"></span></a>
 
+=======
+>>>>>>> GitHub/master
           {% else %}
             <p>
               {{ product.description | strip_html | truncatewords: settings.description_words | replace: 'Description', '' | replace: 'Dimensions', '' | replace: 'Details', '' | replace: 'Specs', '' | replace: 'Shipping', ''  }}
 
+<<<<<<< HEAD
               <a href="{{ product.url | within: collection }}" class="view_product_info" title="{{ product.title | escape }} Details">{{ 'collections.general.view_product_details_html' | t }} <span class="icon-right-arrow"></span></a>
+=======
+              <a href="{{ product.url | within: collection }}" class="view_product_info" title="View {{ product.title | escape }} Details">Read More <span class="icon-right-arrow"></span></a>
+>>>>>>> GitHub/master
             </p>
           {% endif %}
         {% endif %}

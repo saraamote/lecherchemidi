@@ -4,6 +4,7 @@
     {% if settings.display_inventory_left %}
       <div class="items_left">
         {% if product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity > 0 %}
+<<<<<<< HEAD
           {% capture items_left_text %}
             {% if product.variants.first.inventory_quantity == 1 %}
               {{ 'products.product.items_left_count.one' | t }}
@@ -13,6 +14,9 @@
           {% endcapture %}
 
           <p><em>{{ product.variants.first.inventory_quantity }} {{ items_left_text }}</em></p>
+=======
+          <p><em>{{ product.variants.first.inventory_quantity }} {{ settings.inventory_left_text | escape }}</em></p>
+>>>>>>> GitHub/master
         {% endif %}
       </div>
     {% endif %}
@@ -40,7 +44,11 @@
 
     {% if settings.display_product_quantity %}
       <div class="left">
+<<<<<<< HEAD
         <label for="quantity">{{ 'products.product.quantity' | t }}:</label>
+=======
+        <label for="quantity">Quantity:</label>
+>>>>>>> GitHub/master
         <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" />
       </div>
     {% endif %}
@@ -50,7 +58,11 @@
       {% elsif settings.cart_action == 'redirect_checkout' %}
         <input type="hidden" name="return_to" value="/checkout" />
       {% endif %}
+<<<<<<< HEAD
       <button type="submit" name="add" class="action_button add_to_cart"><span class="text">{{ 'products.product.add_to_cart' | t }}</button>
+=======
+      <button type="submit" name="add" class="action_button add_to_cart"><span class="text">{{ settings.add_to_cart_text | escape }}</span></button>
+>>>>>>> GitHub/master
     </div>
   </form>
 

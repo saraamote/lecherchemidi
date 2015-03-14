@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 <div class="newsletter {% if newsletter == 'center' %}center{% endif %}">
+=======
+<div class="newsletter">
+>>>>>>> GitHub/master
   <p class="message"></p>
   {% if settings.newsletter_system == 'mailchimp' %}
     <form action="{{ settings.mailchimp_link }}" method="post" name="mc-embedded-subscribe-form" class="contact-form" target="_blank">
       {% comment %}
+<<<<<<< HEAD
         <input type="text" value="" name="FNAME" placeholder="{{ 'general.newsletter_form.first_name' | t }}">
         <input type="text" value="" name="LNAME" placeholder="{{ 'general.newsletter_form.last_name' | t }}">
       {% endcomment %}
@@ -25,5 +30,29 @@
        <input type="email" class="contact_email" name="contact[email]" required pattern="[^ @]*@[^ @]*" placeholder="{{ 'general.newsletter_form.placeholder' | t }}" />
        <input type='submit' class="action_button sign_up" value="{{ 'general.newsletter_form.submit' | t }}" />
      {% endform %}
+=======
+        <input type="text" value="" name="FNAME" placeholder="Fist Name">
+        <input type="text" value="" name="LNAME" placeholder="Last Name">
+      {% endcomment %}
+  	  <input type="email" value="" name="EMAIL" class="required contact_email" placeholder="Enter your email address..." />
+  	  <input type="submit" value="Sign Up" name="subscribe" class="action_button sign_up" />
+    </form>
+  {% else %}
+    {% form 'customer' %}
+      {% if form.posted_successfully? %}
+        <p><em>Thank you for joining our mailing list!</em></p>
+      {% elsif form.errors %}
+        {% for field in form.errors %}
+          <p><em>{{ field }} - {{ form.errors.messages[field] }}</em></p>
+        {% endfor %}
+      {% endif %}
+
+      <input type="hidden" name="contact[tags]" value="prospect,newsletter"/>
+      <input type="hidden" name="contact[first_name]" value="Newsletter" />
+      <input type="hidden" name="contact[last_name]" value="Subscriber" />
+      <input type="email" class="contact_email" name="contact[email]" required pattern="[^ @]*@[^ @]*" placeholder="Enter your email address..." />
+      <input type='submit' class="action_button sign_up" value="Sign Up" />
+    {% endform %}
+>>>>>>> GitHub/master
   {% endif %}
 </div>

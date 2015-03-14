@@ -1,6 +1,7 @@
 {% layout settings.customer_layout %}
 
 <div class="sixteen columns clearfix collection_nav">
+<<<<<<< HEAD
   <h1 class="center">{{ 'customer.account.details' | t }}</h1>
   <div class="feature_divider"></div>
 </div>
@@ -12,6 +13,20 @@
       &nbsp; / &nbsp;
       {{ 'layout.customer.log_out' | t | customer_logout_link }}
     </div>
+=======
+  <h1 class="collection_title">Account Details and Order History</h1>
+</div>
+
+<div class="sixteen columns">
+  <div class="clearfix breadcrumb">
+    <div class="right">
+      {% if shop.email %}<a href="mailto:{{shop.email}}">Contact Shop Owner</a>{% endif %}
+    </div>
+
+    {% if customer %}
+      Logged in as <a href="/account" title="My Account">{{ customer.name }}</a> ({{ "logout" | customer_logout_link }})
+    {% endif %}
+>>>>>>> GitHub/master
   </div>
 </div>
 
@@ -30,7 +45,13 @@
           <p>{{ customer.default_address.zip}}</p>
           <p>{{ customer.default_address.phone }}</p>
         {% endif %}
+<<<<<<< HEAD
           <p><a href="/account/addresses">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
+=======
+        <p>
+          <a id="view_address" href="/account/addresses">View Addresses ({{ customer.addresses_count }})</a>
+        </p>
+>>>>>>> GitHub/master
       </div>
     </div>
   </div>
@@ -38,33 +59,56 @@
 
   <div class="twelve columns">
     <div id="customer_orders">
+<<<<<<< HEAD
       <h4>{{ 'customer.orders.title' | t }}</h4>
 
+=======
+>>>>>>> GitHub/master
       {% if customer.orders.size != 0 %}
       <table width="100%">
         <thead>
           <tr>
+<<<<<<< HEAD
             <th>{{ 'customer.orders.order_number' | t }}</th>
             <th>{{ 'customer.orders.date' | t }}</th>
             <th>{{ 'customer.orders.payment_status' | t }}</th>
             <th>{{ 'customer.orders.fulfillment_status' | t }}</th>
             <th>{{ 'customer.orders.total' | t }}</th>
+=======
+            <th class="order_number">Order</th>
+            <th class="date">Date</th>
+            <th class="payment_status">Payment Status</th>
+            <th class="fulfillment_status">Fulfillment Status</th>
+            <th class="total">Total</th>
+>>>>>>> GitHub/master
           </tr>
         </thead>
         <tbody>
           {% for order in customer.orders %}
           <tr class="{% cycle 'odd', 'even' %} {% if order.cancelled %}cancelled_order{% endif %}">
+<<<<<<< HEAD
               <td>{{ order.name | link_to: order.customer_url }}</td>
               <td>{{ order.created_at | date: format: "month_day_year" }}</td>
               <td>{{ order.financial_status_label }}</td>
               <td>{{ order.fulfillment_status }}</td>
               <td>{{ order.total_price | money }}</td>
+=======
+            <td>{{ order.name | link_to: order.customer_url }}</td>
+            <td><span class="note">{{ order.created_at | date: "%b %d, %Y" }}</span></td>
+            <td><span class="status_{{ order.financial_status }}">{{ order.financial_status }}</span></td>
+            <td><span class="status_{{ order.fulfillment_status }}">{{ order.fulfillment_status }}</span></td>
+            <td><span class="total money">{{ order.total_price | money }}</span></td>
+>>>>>>> GitHub/master
           </tr>
           {% endfor %}
         </tbody>
       </table>
       {% else %}
+<<<<<<< HEAD
         <p>{{ 'customer.orders.none' | t }}</p>
+=======
+        <p>You haven't placed any orders yet.</p>
+>>>>>>> GitHub/master
       {% endif %}
     </div>
   </div>

@@ -2,28 +2,48 @@
 
 <div id="shipping-calculator" class="sixteen columns">
 
+<<<<<<< HEAD
   <h4>{{ 'cart.shipping_calculator.heading' | t }}</h4>
+=======
+  <h4>{{ settings.shipping_calculator_heading }}</h4>
+>>>>>>> GitHub/master
 
   <div id="shipping-calculator-form-wrapper" class="clearfix">
 
       <div class="four columns alpha" id="address_country_container">
+<<<<<<< HEAD
         <label for="address_country">{{ 'cart.shipping_calculator.country' | t }}</label>
+=======
+        <label for="address_country">Country</label>
+>>>>>>> GitHub/master
         <select id="address_country" name="address[country]" data-default="{% if shop.customer_accounts_enabled and customer %}{{ customer.default_address.country }}{% elsif settings.shipping_calculator_default_country != '' %}{{ settings.shipping_calculator_default_country }}{% endif %}">{{ country_option_tags }}</select>
       </div>
 
       <div class="four columns" id="address_province_container" style="display:none;">
+<<<<<<< HEAD
         <label for="address_province" id="address_province_label">{{ 'cart.shipping_calculator.province' | t }}</label>
+=======
+        <label for="address_province" id="address_province_label">Province</label>
+>>>>>>> GitHub/master
         <select id="address_province" name="address[province]" data-default="{% if shop.customer_accounts_enabled and customer and customer.default_address.province != '' %}{{ customer.default_address.province }}{% endif %}"></select>
       </div>
 
       <div class="three columns" id="address_zip_container">
+<<<<<<< HEAD
         <label for="address_zip">{{ 'cart.shipping_calculator.zip_code' | t }}</label>
+=======
+        <label for="address_zip">Zip/Postal Code</label>
+>>>>>>> GitHub/master
         <input type="text" id="address_zip" class="styled-input" name="address[zip]"{% if shop.customer_accounts_enabled and customer %} value="{{ customer.default_address.zip }}"{% endif %} />
       </div>
 
       <div class="four columns omega" id="get-rates-container">
         <label for="get-rates-submit">&nbsp;</label>
+<<<<<<< HEAD
         <input type="button" id="get-rates-submit" class="get-rates action_button" value="{{ 'cart.shipping_calculator.submit_button_label' | t }}" />
+=======
+        <input type="submit" id="get-rates-submit" class="get-rates guest_button" value="{{ settings.shipping_calculator_submit_button_label }}" />
+>>>>>>> GitHub/master
       </div>
 
   </div><!-- .shipping-calculator-form-wrapper -->
@@ -37,6 +57,7 @@
   <p id="shipping-rates-feedback" class="{{if success}}success{{else}}error{{/if}}">
   {{if success}}
     {{if rates.length > 1}}
+<<<<<<< HEAD
     {% endraw %}
     {{ 'cart.shipping_calculator.additional_rates' | t }}
     {% raw %}
@@ -50,6 +71,14 @@
       {% endraw %}
       {{ 'cart.shipping_calculator.no_shipping_destination' | t }}
       {% raw %}
+=======
+    There are ${rates.length} shipping rates available for ${address}, starting at {{html Shopify.Cart.ShippingCalculator.formatRate(rates[0].price)}}.
+    {{else}}
+      {{if rates.length == 1}}
+      There is one shipping rate available for ${address}.
+      {{else}}
+      We do not ship to this destination.
+>>>>>>> GitHub/master
       {{/if}}
     {{/if}}
   {{else}}
@@ -58,11 +87,15 @@
   </p>
   <ul id="shipping-rates">
     {{each( index, rate ) rates}}
+<<<<<<< HEAD
     <li>${rate.name}
     {% endraw %}
     {{ 'cart.shipping_calculator.at' | t }}
     {% raw %}
      {{html Shopify.Cart.ShippingCalculator.formatRate(rate.price)}}</li>
+=======
+    <li>${rate.name} at {{html Shopify.Cart.ShippingCalculator.formatRate(rate.price)}}</li>
+>>>>>>> GitHub/master
     {{/each}}
   </ul>
   {% endraw %}
@@ -78,8 +111,13 @@
     function showCart() {
         if(($("#address_country").val() == "" && $("#address_province").val() == null) || $("#address_country").length == 1) {
         Shopify.Cart.ShippingCalculator.show( {
+<<<<<<< HEAD
           submitButton: {{ 'cart.shipping_calculator.submit_button_label' | t | json }},
           submitButtonDisabled: {{ 'cart.shipping_calculator.submit_button_label_disabled' | t | json }}{% if shop.customer_accounts_enabled and customer %},
+=======
+          submitButton: {{ settings.shipping_calculator_submit_button_label | json }},
+          submitButtonDisabled: {{ settings.shipping_calculator_submit_button_label_disabled | json }}{% if shop.customer_accounts_enabled and customer %},
+>>>>>>> GitHub/master
           customerIsLoggedIn: true{% endif %},
           moneyFormat: {{ shop.money_format | json }}
           } )

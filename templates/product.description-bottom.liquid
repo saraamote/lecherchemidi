@@ -1,5 +1,6 @@
 <div class="sixteen columns">
   <div class="clearfix breadcrumb">
+<<<<<<< HEAD
     <div class="nav_arrows">
       {% if collection.previous_product %}
         <a href="{{ collection.previous_product }}" title="{{ 'products.general.previous_product_html' | t }}" class="ss-icon prev">&#x25C5;</a>
@@ -7,12 +8,25 @@
 
       {% if collection.next_product %}
         <a href="{{collection.next_product}}" title="{{ 'products.general.next_product_html' | t }}" class="ss-icon next">&#x25BB;</a>
+=======
+    <div class="right mobile_hidden">
+      {% if collection.previous_product %}
+        <a href="{{ collection.previous_product }}" class="ss-icon">&#x25C5;</a>
+      {% endif %}
+
+      {% if collection.next_product %}
+        <a href="{{collection.next_product}}" class="ss-icon">&#x25BB;</a>
+>>>>>>> GitHub/master
       {% endif %}
     </div>
 
     {% if settings.product_breadcrumb %}
       <div class="breadcrumb_text">
+<<<<<<< HEAD
         <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="{{ shop.url }}" title="{{ shop.name | escape }}" itemprop="url"><span itemprop="title">{{ 'general.breadcrumbs.home' | t }}</span></a></span>
+=======
+        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="{{ shop.url }}" title="{{ shop.name | escape }}" itemprop="url"><span itemprop="title">Home</span></a></span>
+>>>>>>> GitHub/master
         &nbsp;<span class="icon-right-arrow"></span>
         <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
           {% if collection %}
@@ -40,6 +54,7 @@
 
   <div class="section product_section clearfix">
 
+<<<<<<< HEAD
      <div class="{% if settings.product_sidebar %}seven{% else %}nine{% endif %} columns {% if product-images == blank %}{% if settings.product_images_position == 'left' %}alpha{% else %}omega{% endif %}{% endif %} {% if settings.product_images_position == 'right' %}mobile_only{% endif %}">
       {% include 'product-images' %}
     </div>
@@ -82,6 +97,45 @@
           {{ variant.compare_at_price | money }}
         {% endif %}
         </span>
+=======
+     {% if settings.product_images_position == 'left' %}
+       <div class="{% if settings.product_sidebar %}seven{% else %}nine{% endif %} columns {% if product-images == blank %}{% if settings.product_images_position == 'left' %}alpha{% else %}omega{% endif %}{% endif %}">
+        {% include 'product-images' %}
+      </div>
+     {% endif %}
+
+     <div class="{% if settings.product_sidebar %}five{% else %}seven{% endif %} columns {%if settings.product_images_position == 'left' %}omega{% else %}alpha{% endif %}">
+       <h1 class="product_name" itemprop="name">{{ product.title }}</h1>
+       {% if settings.display_vendor %}
+          <p class="vendor">
+            <span class="label">by:</span> <span itemprop="brand">{{ product.vendor | link_to_vendor }}</span>
+          </p>
+       {% endif %}
+
+      {% assign variant = product.selected_or_first_available_variant %}
+      <p class="modal_price" itemprop="offerDetails" itemscope itemtype="http://data-vocabulary.org/Offer">
+         <meta itemprop="currency" content="{{ shop.currency }}" />
+         <meta itemprop="seller" content="{{ shop.name | escape }}" />
+         <meta itemprop="availability" content="{% if product.available %}in_stock{% else %}out_of_stock{% endif %}" />
+
+         <span class="sold_out">{% if variant.available == false %}{{ settings.sold_out_text }}{% endif %}</span>
+         <span itemprop="price" content="{{ variant.price | money_without_currency }}" class="{% if variant.compare_at_price > variant.price %}sale{% endif %}">
+            <span class="current_price">
+              {% if variant.available %}
+                {% if variant.price > 0 %}
+                  {{ variant.price | money }}
+                {% else %}
+                  {{ settings.free_price_text }}
+                {% endif %}
+              {% endif %}
+            </span>
+         </span>
+         <span class="was_price">
+          {% if variant.price < variant.compare_at_price %}
+            {{ variant.compare_at_price | money }}
+          {% endif %}
+         </span>
+>>>>>>> GitHub/master
       </p>
 
       {% include 'product-notify-me' %}
@@ -98,7 +152,11 @@
 
          {% if settings.display_collections %}
            <p>
+<<<<<<< HEAD
              <span class="label">{{ 'products.product.collections' | t }}:</span>
+=======
+             <span class="label">Collections:</span>
+>>>>>>> GitHub/master
              <span>
               {% for col in product.collections %}
                 <a href="{{ col.url }}" title="{{ col.title }}">{{ col.title }}</a>{% unless forloop.last %},{% endunless %}
@@ -111,12 +169,20 @@
             <p>
               {% for tag in product.tags %}
                 {% if forloop.first %}
+<<<<<<< HEAD
                   <span class="label">{{ 'products.product.tags' | t }}:</span>
+=======
+                  <span class="label">Category:</span>
+>>>>>>> GitHub/master
                 {% endif %}
 
                 {% unless tag contains 'meta-related-collection-' %}
                   <span>
+<<<<<<< HEAD
                     <a href="/collections/{% if collection %}{{ collection.handle }}{% else %}all{% endif %}/{{ tag | handle }}" title="{{ 'products.product.products_tagged' | t: tag: tag }}">{{ tag }}</a>{% unless forloop.last %},{% endunless %}
+=======
+                      <a href="/collections/{% if collection %}{{ collection.handle }}{% else %}all{% endif %}/{{ tag | handle }}" title="Products tagged {{ tag | escape}}">{{ tag }}</a>{% unless forloop.last %},{% endunless %}
+>>>>>>> GitHub/master
                   </span>
                 {% endunless %}
               {% endfor %}
@@ -125,15 +191,23 @@
 
         {% if settings.display_type %}
            <p>
+<<<<<<< HEAD
              <span class="label">{{ 'products.product.product_types' | t }}:</span>
              <span itemprop="category">{{ product.type | link_to_type }}</span>
+=======
+             <span class="label">Type:</span> <span itemprop="category">{{ product.type | link_to_type }}</span>
+>>>>>>> GitHub/master
            </p>
         {% endif %}
        </div>
     </div>
 
     {% if settings.product_images_position == 'right' %}
+<<<<<<< HEAD
       <div class="{% if settings.product_sidebar %}seven{% else %}nine{% endif %} columns {% if product-images == blank %}{% if settings.product_images_position == 'left' %}alpha{% else %}omega{% endif %}{% endif %} mobile_hidden">
+=======
+      <div class="{% if settings.product_sidebar %}six{% else %}eight{% endif %} columns {% if product-images == blank %}{% if settings.product_images_position == 'left' %}alpha{% else %}omega{% endif %}{% endif %}">
+>>>>>>> GitHub/master
         {% include 'product-images' %}
       </div>
     {% endif %}
@@ -166,6 +240,7 @@
     {% endfor %}
 
     {% if col and collections[col].all_products_count > 0 %}
+<<<<<<< HEAD
       {% if collections[col].all_products_count != 1 or collections[col].products.first.id != product.id %}
         <br class="clear" />
         <br class="clear" />
@@ -177,6 +252,17 @@
         {% assign products_per_row = settings.products_per_row %}
         {% include 'product-loop' with settings.product_sidebar %}
       {% endif %}
+=======
+      <br class="clear" />
+      <br class="clear" />
+      <h3 class="title center">{{ settings.related_products_title }}</h3>
+      <div class="feature_divider"></div>
+
+      {% assign skip_product = product %}
+      {% assign products = collections[col].products %}
+      {% assign products_per_row = settings.products_per_row %}
+      {% include 'product-loop' with settings.product_sidebar %}
+>>>>>>> GitHub/master
     {% endif %}
   {% endif %}
 </div>

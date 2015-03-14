@@ -1,5 +1,9 @@
 /******************************************************************
+<<<<<<< HEAD
 Theme Name: Parallax v2.0
+=======
+Theme Name: Parallax v1.0
+>>>>>>> GitHub/master
 Theme URI: http://themes.shopify.com/themes/parallax/styles/aspen?ref=out-of-the-sandbox
 Author: Out of the Sandbox (http://outofthesandbox.com)
 Description: Shopify Theme (http://www.shopify.com/?ref=out-of-the-sandbox)
@@ -59,7 +63,11 @@ table {
 /* #Basic Styles
 ================================================== */
   body {
+<<<<<<< HEAD
     background-color: #877a69;
+=======
+    background-color: #000000;
+>>>>>>> GitHub/master
 
 
 
@@ -71,10 +79,13 @@ table {
     color: #877a69;
     line-height: 1.8em;
 }
+<<<<<<< HEAD
 #content_wrapper {
   background-color: #ffffff;
 }
 
+=======
+>>>>>>> GitHub/master
 ::-moz-selection {
        background-color: #000;
        color: #fff;
@@ -104,7 +115,11 @@ abbr {
     color: #ffffff;
   }
 
+<<<<<<< HEAD
   .feature_image .logo a, .feature_image .logo a:hover, .feature_image .logo a:visited, .feature_image .logo a:active {
+=======
+  .index .logo a, .index .logo a:hover, .index .logo a:visited, .index .logo a:active {
+>>>>>>> GitHub/master
     color: #ffffff;
   }
 h1, h2, h3, h4, h5, h6, .collection_title, .headline, p.subtitle, .footer_menu a, .empty_cart, .promo_banner {
@@ -121,7 +136,11 @@ h1, h2, h3, h4, h5, h6, .collection_title, .headline, p.subtitle, .footer_menu a
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .collection_title { font-weight: inherit; }
 h1 a, h1 a:visited, .collection_title a, .collection_title a:visited { color: #877a69 }
 h1 a:hover, h1 a:active, .collection_title a:hover, .collection_title a:active { color: #007a87 }
+<<<<<<< HEAD
 h1, .h1, h1.home, h2.title, .collection_title, h3.title { font-size: 25px;  line-height: 1.25em; margin: 0 auto 15px; clear:both; font-weight: lighter; padding-top: 4px; }
+=======
+h1, .h1, h1.home, h2.title, .collection_title, h3.title { font-size: 25px;  line-height: 1.5em; margin: 0 auto 15px; clear:both; font-weight: lighter; padding-top: 4px; }
+>>>>>>> GitHub/master
 h1.product_name { margin-bottom: 15px; }
 h2.product_name a { color: #877a69; }
 h2, .h2 { font-size: 22px; margin-bottom: 0.75em; line-height: 1.5em }
@@ -130,12 +149,24 @@ h1.collection_title, div.collection_title { margin-bottom: 0; line-height: 25px;
 h1.collection_title_tags, div.collection_title_tags { padding-right: 25px; border-right: solid 1px #b8c6c6; }
 h4, .h4, h4.title a, h6.title {
   font-size: 18px; line-height: 32px; margin: 0 0 1em 0; padding: 0;
+<<<<<<< HEAD
+=======
+
+
+    border-bottom: 1px solid #bbbbbb;
+
+
+>>>>>>> GitHub/master
   padding: 7px 0; color: #877a69;
 }
 h4.title a { border: 0; padding: 0; margin: 0;}
 h5, .h5 { font-size: 16px; padding-bottom: 1em; }
 h5.sub_title { padding-bottom: 5px; }
+<<<<<<< HEAD
 h6, .h6, h6.title, ul.footer_menu a { font-size: 16px; letter-spacing: 1px; }
+=======
+h6, .h6, h6.title { font-size: 16px; }
+>>>>>>> GitHub/master
 .subheader { color: #777; }
 p { margin: 0 0 15px; font-style: normal; line-height: 1.8em; }
 p img { margin: 0; }
@@ -146,6 +177,7 @@ small { font-size: 90%; }
 .feature p { font-size: smaller }
 #featured_links { padding: 20px 0; }
 #featured_links h2 { padding-top: 15px; }
+<<<<<<< HEAD
 
 .feature_divider {
 
@@ -163,6 +195,21 @@ small { font-size: 90%; }
 }
 .content1 h2, .content2 h2, .content3 h2 {
   margin-bottom: 0;
+=======
+#featured_links h2::after {
+  content: " ";
+  border: solid 2px;
+  display: block;
+  width: 70px;
+  margin: 25px auto;
+}
+
+.feature_divider {
+  border: solid 2px;
+  display: block;
+  width: 70px;
+  margin: 25px auto;
+>>>>>>> GitHub/master
 }
 
 /*  Blockquotes  */
@@ -190,17 +237,28 @@ a:hover, a:focus { color: #009aab; }
 /* #Lists
 ================================================== */
   ul, ol { margin-bottom: 20px; }
+<<<<<<< HEAD
   ul { list-style: disc outside; }
+=======
+  ul { list-style: circle outside; }
+>>>>>>> GitHub/master
   ol { list-style: decimal; }
   ul, ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
   ul.square { list-style: square outside; }
   ul.circle { list-style: circle outside; }
   ul.disc { list-style: disc outside; }
   ul ul, ul ol,
+<<<<<<< HEAD
   ol ol, ol ul { margin: 4px 0 5px 30px;  }
   ul ul li, ul ol li,
   ol ol li, ol ul li { margin-bottom: 6px; }
   li { margin-bottom: 12px; }
+=======
+  ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+  ul ul li, ul ol li,
+  ol ol li, ol ul li { margin-bottom: 6px; }
+  li { line-height: 18px; margin-bottom: 12px; }
+>>>>>>> GitHub/master
   ul.large li { line-height: 21px; }
   ul.none { list-style: none outside; margin-left: 0;}
   ul.border {
@@ -233,10 +291,17 @@ a:hover, a:focus { color: #009aab; }
 
 div.header_bar {
   top: 0 !important;
+<<<<<<< HEAD
   @include background-opacity(#877a69, 0.6);
 }
 
 .header_bar a, .header_bar a:visited, .header_bar a span, .header_bar select.currencies {
+=======
+  @include background-opacity(#1b1f23, 0.6);
+}
+
+.header_bar a, .header_bar a:visited {
+>>>>>>> GitHub/master
   color: #ffffff !important;
   text-shadow: none !important;
 }
@@ -299,12 +364,16 @@ div#header a span {
 #header a.icon-menu span {
   top: -3px;
 }
+<<<<<<< HEAD
 #header a.icon-menu:before {
   margin-left:38px;
 }
 #header a.icon-menu {
   left:-20px;
 }
+=======
+
+>>>>>>> GitHub/master
 .nav ul {
     display: block;
     border: none;
@@ -322,14 +391,22 @@ div#header a span {
 
 .nav ul li a.sub-menu {
   padding: 10px 4px 10px 4px;
+<<<<<<< HEAD
   z-index: 1001;
+=======
+  z-index: 1006;
+>>>>>>> GitHub/master
 }
 
 .nav ul li:hover a.sub-menu {
   color: #ffffff;
 }
 
+<<<<<<< HEAD
 .nav a, .nav a:visited, .nav a:active, #header a span, .nav a.cart-button span, select.currencies {
+=======
+.nav a, .nav a:visited, .nav a:active, #header a span, .nav a.cart-button span, select#currencies {
+>>>>>>> GitHub/master
 
       font-family: "Lato";
 
@@ -343,14 +420,27 @@ div#header a span {
     padding: 10px 4px 10px 4px;
 }
 
+<<<<<<< HEAD
 .feature_image .header .nav a, .feature_image .header .nav a.icon-cart, .feature_image .header .nav a.cart-button span, .feature_image .header select.currencies {
+=======
+.index .header .nav a {
+>>>>>>> GitHub/master
   color: #ffffff;
 
     text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
 
 }
+<<<<<<< HEAD
 .feature_image .header .nav a:hover, .nav a.active, .header_bar a.active, .feature_image .header .nav a:focus {
   color: #b8c6c6 !important;
+=======
+.index .header .nav a.icon-cart {
+  color: #ffffff;
+  text-shadow: none;
+}
+.index .header .nav a:hover, .index .header .nav a:focus {
+  color: #b8c6c6;
+>>>>>>> GitHub/master
 }
 .nav a.icon-cart span {
   display: inline;
@@ -361,12 +451,20 @@ a.icon-cart, a.icon-search {
 .nav ul.search_nav {
   margin-bottom: 5px;
 }
+<<<<<<< HEAD
 .nav ul li a:hover, nav ul li a:focus, .nav a.icon-cart:hover span {
+=======
+.nav ul li a:hover, nav ul li a:focus, .nav a.icon-cart:hover span, .search-close:hover {
+>>>>>>> GitHub/master
   color: #b8c6c6 !important;
 }
 
 .nav ul.menu li {
+<<<<<<< HEAD
   padding: 5px 0 5px 3px;
+=======
+  padding: 5px;
+>>>>>>> GitHub/master
   line-height: 1;
 }
 
@@ -389,7 +487,11 @@ input[type="submit"].guest_button, input[type="button"].guest_button {
 }
 .nav ul li .cart-button span {
   padding-left: 5px;
+<<<<<<< HEAD
   top: -1px;
+=======
+  top: -2px;
+>>>>>>> GitHub/master
 }
 
 input[type="submit"].guest_button, input[type="submit"].guest_button:hover {
@@ -418,7 +520,11 @@ input[type="submit"].guest_button:hover {
   color: #ffffff;
 }
 
+<<<<<<< HEAD
 .feature_image .header .nav ul.menu ul li a.sub-link {
+=======
+.index .header .nav ul.menu ul li a.sub-link {
+>>>>>>> GitHub/master
   padding: 5px 0 5px 24px;
 }
 
@@ -426,10 +532,17 @@ input[type="submit"].guest_button:hover {
 .dropdown {
   display: none;
   position: absolute;
+<<<<<<< HEAD
   margin-top: -200px;
 }
 .dropdown-wide {
   width: 500px;
+=======
+  z-index: 1005;
+}
+.dropdown-wide {
+  width: 400px;
+>>>>>>> GitHub/master
 }
 .dropdown-wide ul li a {
    word-wrap: break-word;
@@ -438,11 +551,19 @@ input[type="submit"].guest_button:hover {
   text-shadow: none !important;
 }
 .dropdown_links {
+<<<<<<< HEAD
   @include background-opacity(#877a69, 0.6);
   margin-top: 200px;
 }
 .nav ul.menu ul {
   width: 250px;
+=======
+  @include background-opacity(#1b1f23, 0.6);
+  margin-top: 15px;
+}
+.nav ul.menu ul {
+  width: 200px;
+>>>>>>> GitHub/master
   float: left;
   display: inline;
 }
@@ -451,6 +572,10 @@ input[type="submit"].guest_button:hover {
   display: block;
   text-align:left;
   padding: 0;
+<<<<<<< HEAD
+=======
+  z-index: 1005;
+>>>>>>> GitHub/master
 }
 .nav ul.menu ul li a {
   border: 0;
@@ -469,13 +594,20 @@ input[type="submit"].guest_button:hover {
   display: block;
 }
 
+<<<<<<< HEAD
 select.currencies {
   padding: 0;
   border: 0 !important;
+=======
+select#currencies {
+  padding: 0;
+  border: 0;
+>>>>>>> GitHub/master
   background-color: transparent;
   margin-bottom: 0 !important;
   min-width: 62px;
   outline: 0;
+<<<<<<< HEAD
   -moz-appearance: none;
   text-indent: 0.01px;
   text-overflow: '';
@@ -495,6 +627,13 @@ select.currencies option {
 }
 .nav ul.menu li.currencies {
   padding-top: 0;
+=======
+}
+
+select#currencies:active {
+  border: 0;
+  outline: 0;
+>>>>>>> GitHub/master
 }
 
 .toggle_menu {
@@ -507,7 +646,12 @@ select.currencies option {
 .scroll-arrow {
   opacity: 1;
   display: block;
+<<<<<<< HEAD
   background: url(//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/scroll-arrow.png?6143292873778010291) no-repeat center center;
+=======
+  background: url(//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/scroll-arrow.png?9450207911173904871) no-repeat center center;
+  z-index: 10000;
+>>>>>>> GitHub/master
   text-indent: -99999em;
   background-size: 53px;
   height: 53px;
@@ -609,6 +753,7 @@ div.search-close {
 }
 
 #search form input {
+<<<<<<< HEAD
   height: 60px;
   border: solid 1px rgb(138, 137, 138);
   padding-left: 55px;
@@ -631,6 +776,17 @@ div.search-close {
   color: #888;
 }
 
+=======
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid 1px rgb(138, 137, 138);
+  padding: 30px 15px 30px 55px;
+  font-size: 26px;
+}
+
+>>>>>>> GitHub/master
 /* #Images
 ================================================== */
 /*
@@ -695,6 +851,7 @@ div.search-close {
     max-width: 100%;
   }
 
+<<<<<<< HEAD
   .header-video {
     position: relative;
     overflow: hidden;
@@ -728,6 +885,8 @@ div.search-close {
     height: auto;
   }
 
+=======
+>>>>>>> GitHub/master
 /* #Buttons
 ================================================== */
 
@@ -743,7 +902,11 @@ a.button,
     background: #877a69;
     color: #ffffff;
     border: 0;
+<<<<<<< HEAD
     padding: 10px 20px;
+=======
+    padding: 11px 20px;
+>>>>>>> GitHub/master
     text-align: center;
     cursor: pointer;
 
@@ -812,7 +975,10 @@ a.button,
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+<<<<<<< HEAD
     min-height: 4em;
+=======
+>>>>>>> GitHub/master
     @include background-opacity(#fff, 0.8);
   }
 
@@ -827,7 +993,11 @@ a.button,
     width:180px;margin-left: 20px;margin-top: 20px; background-color: #444; color: #ffffff; text-align: center; text-indent: 0;
   }
   #cart .action_button {
+<<<<<<< HEAD
     width:180px;margin-right: 20px; margin-top: 20px; background-color: #877a69; color: #ffffff; text-align: center; text-indent: 0; padding: 10px; line-height: 1;
+=======
+    width:180px;margin-right: 20px; margin-top: 20px; background-color: #877a69; color: #ffffff; text-align: center; text-indent: 0; padding: 10px;
+>>>>>>> GitHub/master
   }
 
   #cart span::-moz-selection, #cart p::-moz-selection, #cart input::-moz-selection {
@@ -839,7 +1009,11 @@ a.button,
     color: inherit;
   }
 
+<<<<<<< HEAD
   div.share-button { float: right; margin-top: 3px; margin-left: 10px; }
+=======
+  div.share-button { float: right; margin-top: 3px; }
+>>>>>>> GitHub/master
   div.share-button.sharer-0 label {
     background-color: #007a87;
     color: #fff;
@@ -867,7 +1041,11 @@ a.button,
 ================================================== */
   ul.tabs {
     display: block;
+<<<<<<< HEAD
     margin: 10px 0 15px 0;
+=======
+    margin: 10px 0 10px 0;
+>>>>>>> GitHub/master
     padding: 0;
     border-bottom: solid 1px #b8c6c6;
     border-top: 0;
@@ -897,8 +1075,15 @@ ul.tabs li a {
     font-size: 13px; }
 ul.tabs li a.active {
     border: solid 1px #b8c6c6;
+<<<<<<< HEAD
     background-color: #ffffff;
     border-bottom: #ffffff;
+=======
+
+      background-color: #000000;
+      border-bottom: #000000;
+
+>>>>>>> GitHub/master
     height: 30px;
     position: relative;
     top: -4px;
@@ -923,7 +1108,11 @@ ul.tabs li:last-child a {
     border-top-right-radius: 4px; }
 ul.tabs-content { margin: 0; display: block; border: 0;}
 ul.tabs-content > li { display:none; border: 0;}
+<<<<<<< HEAD
 ul.tabs-content > li.active { display: block; border: 0; padding-left: 10px; }
+=======
+ul.tabs-content > li.active { display: block; border: 0;}
+>>>>>>> GitHub/master
 
   /* Clearfixing tabs for beautiful stacking */
   ul.tabs:before,
@@ -972,6 +1161,7 @@ input[type="text"]:active, input[type="text"]:focus, input[type="password"]:acti
     -moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
     -webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
     box-shadow:  0 0 3px rgba(0,0,0,.2); }
+<<<<<<< HEAD
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -985,6 +1175,10 @@ select::-ms-expand {
 }
 select {
   background: url(//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/select.png?6143292873778010291) no-repeat right, #fff;
+=======
+select {
+  background: url(//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/select.png?9450207911173904871) no-repeat right,#fff;
+>>>>>>> GitHub/master
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -996,9 +1190,12 @@ select {
   -o-appearance: none;
   appearance: none;
   padding: 10px 9px 8px;
+<<<<<<< HEAD
   -moz-appearance: none;
   text-indent: 0.01px;
   text-overflow: '';
+=======
+>>>>>>> GitHub/master
 }
 label,
   legend {
@@ -1012,13 +1209,20 @@ label span,
     font-weight: bold;
     font-size: 13px;
     color: #444; }
+<<<<<<< HEAD
 textarea { padding: 8px; min-height: 80px; }
+=======
+textarea { padding: 8px; min-height: 50px; }
+>>>>>>> GitHub/master
 
   input.sign_up[type="submit"] {
     margin-left: 5px;
     display: inline-block;
     width: inherit !important;
+<<<<<<< HEAD
     font-size: 15px !important;
+=======
+>>>>>>> GitHub/master
   }
   input.contact_email[type="email"] {
     width: 420px;
@@ -1070,9 +1274,12 @@ textarea { padding: 8px; min-height: 80px; }
     text-indent: 0 !important;
     font-size: small;
   }
+<<<<<<< HEAD
   li.last_cart_item:after {
     border: none !important;
   }
+=======
+>>>>>>> GitHub/master
   .cart_image {
     padding-right: 20px;
     max-width: 100px;
@@ -1141,6 +1348,7 @@ table { margin-bottom: 20px;}
 .align_right { text-align:right }
 .align_left { text-align: left; }
 p.warning { text-align: center; font-weight: bold; padding-top: 10px; }
+<<<<<<< HEAD
 .container div.mobile_only, span.mobile_only, .mobile_only { display:none; }
 .no_border { border: none !important; }
 .extra_padding { padding-top: 4px; }
@@ -1153,6 +1361,17 @@ div.is-absolute, html.mm-bottom.mm-opened.mm-opening div.is-absolute {
 .index div.is-absolute, html.index.mm-bottom.mm-opened.mm-opening div.is-absolute {
 
     margin-top: 29px;
+=======
+div.mobile_only, span.mobile_only, .mobile_only { display:none; }
+.no_border { border: none !important; }
+.extra_padding { padding-top: 4px; }
+div.hidden { display: none; }
+div.is-absolute {
+  position: absolute !important;
+  top: 0;
+
+    margin-top: 32px;
+>>>>>>> GitHub/master
 
 }
 #grid .column,
@@ -1182,6 +1401,10 @@ div.is-absolute, html.mm-bottom.mm-opened.mm-opening div.is-absolute {
   }
   div.content {
     padding: 100px 0px 0px 0px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> GitHub/master
   }
   .logo a {
     margin: 0 auto;
@@ -1196,7 +1419,13 @@ div.is-absolute, html.mm-bottom.mm-opened.mm-opening div.is-absolute {
   }
   .homepage_content { padding: 20px 0; }
   .homepage_content, .homepage_content h1, .homepage_content h2, .homepage_content h3, .homepage_content h4, .homepage_content h5, .homepage_content h6 {
+<<<<<<< HEAD
     background-color: #ffffff;
+=======
+
+      background-color: #000000;
+
+>>>>>>> GitHub/master
     color: #363636;
   }
 
@@ -1218,14 +1447,21 @@ div.is-absolute, html.mm-bottom.mm-opened.mm-opening div.is-absolute {
   .breadcrumb a.ss-icon:hover {
     color: #007a87;
   }
+<<<<<<< HEAD
   .nav_arrows {
     float: right;
   }
+=======
+>>>>>>> GitHub/master
   .continue_shopping {
     float: right;
     font-size: 14px;
   }
+<<<<<<< HEAD
   .vendor, .sku {
+=======
+  .vendor {
+>>>>>>> GitHub/master
     margin-top: -15px;
   }
   #category {
@@ -1340,7 +1576,10 @@ div.is-absolute, html.mm-bottom.mm-opened.mm-opening div.is-absolute {
     display: block;
     width: 100%;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> GitHub/master
   .cart_page_image img {
     opacity: 0;
     transition: opacity .3s ease-in;
@@ -1361,7 +1600,11 @@ div.is-absolute, html.mm-bottom.mm-opened.mm-opening div.is-absolute {
     position: absolute;
     bottom: 5px;
     right: 0;
+<<<<<<< HEAD
     color: #363636;
+=======
+    color: #877a69;
+>>>>>>> GitHub/master
   }
   .thumbnail .quick_shop:hover {
     opacity: 1;
@@ -1371,11 +1614,56 @@ div.is-absolute, html.mm-bottom.mm-opened.mm-opening div.is-absolute {
     display:block;
     margin-bottom: 1em;
   }
+<<<<<<< HEAD
   .twitter-timeline {
     width: 100% !important;
   }
   #instafeed img, #instafeed video {
     margin-bottom: 1em;
+=======
+  .twittercont, .fancycount {
+    display: inline-block;
+    margin-left: 6px;
+  }
+  .facebookcont {
+    display: inline-block;
+    position: relative;
+    margin-left: 6px;
+    min-width: 88px;
+  }
+  a.fancybutton {
+    background:url(//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/fancy.png?9450207911173904871) no-repeat;
+    font:11px Arial,sans-serif;
+    text-indent:-9999em;
+    font-size:.01em;
+    color:#cd1f1f;
+    height:20px;
+    width:56px;
+    display: inline-block;
+    margin-left: 6px;
+    position: relative;
+    top: -20px;
+  }
+  a.pinterestcount {
+    background:url(//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/pinit.png?9450207911173904871) no-repeat;
+    font:11px Arial,sans-serif;
+    text-indent:-9999em;
+    font-size:.01em;
+    color:#cd1f1f;
+    height:20px;
+    width:41px;
+    background-position:0 0;
+    display: inline-block;
+    margin-left: 6px;
+    position: relative;
+    top: -20px;
+  }
+  a.pinterestcount:hover{
+    background-position:0 -21px;
+  }
+  a.pinterestcount:active{
+    background-position:0 -42px;
+>>>>>>> GitHub/master
   }
   .arrow {
     font-size: smaller;
@@ -1405,13 +1693,21 @@ div.is-absolute, html.mm-bottom.mm-opened.mm-opening div.is-absolute {
   }
   .modal p.modal_price, p.modal_price {
     font-size: 22px;
+<<<<<<< HEAD
     margin-bottom: 10px;
+=======
+>>>>>>> GitHub/master
   }
   .modal form {
     margin-bottom: 10px;
   }
+<<<<<<< HEAD
   .notify_form .action_button {
     width: 100%;
+=======
+  .notify_form .submit {
+    padding: 8px 8px !important;
+>>>>>>> GitHub/master
   }
   .product_image_col {
     margin-top: 15px;
@@ -1434,7 +1730,11 @@ div.is-absolute, html.mm-bottom.mm-opened.mm-opening div.is-absolute {
     padding-top: 0;
   }
   .sidebar_title {
+<<<<<<< HEAD
     padding-bottom: 0px;
+=======
+    margin-bottom: 0;
+>>>>>>> GitHub/master
   }
   .blog_list {
     margin-left: 0
@@ -1514,7 +1814,11 @@ div.is-absolute, html.mm-bottom.mm-opened.mm-opening div.is-absolute {
   .inline_purchase {
     display: inline-block;
     margin-left: 20px;
+<<<<<<< HEAD
     margin-top: 25px;
+=======
+    margin-top: 22px;
+>>>>>>> GitHub/master
   }
   div.article {
     margin-bottom: 35px;
@@ -1558,9 +1862,15 @@ div.is-absolute, html.mm-bottom.mm-opened.mm-opening div.is-absolute {
   .footer {
     margin-top: 2.5em;
     padding: 25px 0;
+<<<<<<< HEAD
     border-top: solid 1px #000000;
     background-color: #877a69;
     color: #877a69;
+=======
+    border-top: solid 1px #1b1f23;
+    background-color: #1b1f23;
+    color: #6b6b6b;
+>>>>>>> GitHub/master
 
   }
 
@@ -1568,31 +1878,54 @@ div.is-absolute, html.mm-bottom.mm-opened.mm-opening div.is-absolute {
     margin-top: 0;
   }
   .promo_banner {
+<<<<<<< HEAD
     background-color: #ffffff;
     padding: 2px 0;
     text-align: center;
     color: #877a69;
+=======
+    background-color: #1b1f23;
+    padding: 2px 0;
+    text-align: center;
+    color: #6b6b6b;
+>>>>>>> GitHub/master
     font-size: 12px;
   }
   .footer h6, .footer_menu a {
     margin-bottom: 20px;
+<<<<<<< HEAD
     color: #877a69;
+=======
+    color: #7f8c8d;
+>>>>>>> GitHub/master
   }
   .footer p {
     margin-bottom: 10px;
     font-size: 14px;
+<<<<<<< HEAD
     color: #877a69;
   }
   .footer a, .footer a:visited {
     color: #efefef;
+=======
+    color: #6b6b6b;
+  }
+  .footer a, .footer a:visited {
+    color: #7f8c8d;
+>>>>>>> GitHub/master
     font-size: 14px;
   }
   .footer a:hover, .footer a:active {
     color: #ffffff;
+<<<<<<< HEAD
+=======
+    font-size: px;
+>>>>>>> GitHub/master
   }
   .footer a.ss-icon {
     font-size: 50px;
   }
+<<<<<<< HEAD
   .page-contact form {
     margin-bottom: 50px;
   }
@@ -1605,6 +1938,12 @@ div.is-absolute, html.mm-bottom.mm-opened.mm-opening div.is-absolute {
   }
   .maps iframe{
     pointer-events: none;
+=======
+  .page-contact .footer {
+    margin-top: 0;
+    position: relative;
+    top: -6px;
+>>>>>>> GitHub/master
   }
   .contact-form {
     margin-bottom: 0;
@@ -2884,6 +3223,7 @@ html.mm-opened.mm-light .mm-page {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
 
 .mm-ismenu.mm-light {
+<<<<<<< HEAD
   background-color: #f3f3f3;
   color: rgba(0, 0, 0, 0.6); }
 
@@ -2891,6 +3231,11 @@ html.mm-opened.mm-light .mm-page {
   @include background-opacity(#f3f3f3, 0.8);
 }
 
+=======
+  @include background-opacity(#f3f3f3, 0.7);
+  color: rgba(0, 0, 0, 0.6); }
+
+>>>>>>> GitHub/master
 .mm-menu.mm-light .mm-list > li:after {
   border-color: rgba(0, 0, 0, 0.1); }
 .mm-menu.mm-light .mm-list > li > a.mm-subclose {
@@ -2938,6 +3283,7 @@ html.mm-opened.mm-white .mm-page {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
 
 .mm-ismenu.mm-white {
+<<<<<<< HEAD
   background-color: #fff;
   color: rgba(0, 0, 0, 0.6); }
 
@@ -2945,6 +3291,11 @@ html.mm-opened.mm-white .mm-page {
   @include background-opacity(#fff, 0.8);
 }
 
+=======
+  @include background-opacity(#fff, 0.7);
+  color: rgba(0, 0, 0, 0.6); }
+
+>>>>>>> GitHub/master
 .mm-menu.mm-white .mm-list > li:after {
   border-color: rgba(0, 0, 0, 0.1); }
 .mm-menu.mm-white .mm-list > li > a.mm-subclose {
@@ -2992,12 +3343,18 @@ html.mm-opened.mm-black .mm-page {
   box-shadow: none; }
 
 .mm-ismenu.mm-black {
+<<<<<<< HEAD
   background-color: #000;
   color: rgba(255, 255, 255, 0.6); }
 
 #cart.mm-ismenu.mm-black {
   @include background-opacity(#000, 0.7);
 }
+=======
+  @include background-opacity(#000, 0.6);
+  color: rgba(255, 255, 255, 0.6); }
+
+>>>>>>> GitHub/master
 .mm-menu.mm-black .mm-list > li:after {
   border-color: rgba(255, 255, 255, 0.2); }
 .mm-menu.mm-black .mm-list > li > a.mm-subclose {
@@ -3042,11 +3399,19 @@ html.mm-opened.mm-black .mm-page {
   background: #4bd963; }
 
 .mm-fixed-top {
+<<<<<<< HEAD
   -webkit-transition-property: top, right, bottom, left, border, background-color;
   -moz-transition-property: top, right, bottom, left, border, background-color;
   -ms-transition-property: top, right, bottom, left, border, background-color;
   -o-transition-property: top, right, bottom, left, border, background-color;
   transition-property: top, right, bottom, left, border, background-color; }
+=======
+  -webkit-transition-property: top, right, bottom, left, border;
+  -moz-transition-property: top, right, bottom, left, border;
+  -ms-transition-property: top, right, bottom, left, border;
+  -o-transition-property: top, right, bottom, left, border;
+  transition-property: top, right, bottom, left, border; }
+>>>>>>> GitHub/master
 
 /* #jQuery FlexSlider v2.2
 ================================================== */
@@ -3149,6 +3514,14 @@ p.subtitle { font-size: 18px; line-height: 1.5em; font-weight: lighter; position
   width: auto !important;
 }
 
+<<<<<<< HEAD
+=======
+  .slides { width:80% !important; float: left;}
+  .flex-control-thumbs { width:18% !important;float:right;margin:0 auto 15px auto !important; }
+  .flex-control-thumbs li { width:auto !important; }
+  .flex-direction-nav { display: none; }
+
+>>>>>>> GitHub/master
 
 /* #Fancybox
 ================================================== */
@@ -3233,7 +3606,11 @@ p.subtitle { font-size: 18px; line-height: 1.5em; font-weight: lighter; position
   margin-top: -22px;
   margin-left: -22px;
   background-position: 0 -306px;
+<<<<<<< HEAD
   opacity: 1;
+=======
+  opacity: 0.8;
+>>>>>>> GitHub/master
   cursor: pointer;
   z-index: 8060;
   -webkit-border-radius: 4px;
@@ -3242,13 +3619,20 @@ p.subtitle { font-size: 18px; line-height: 1.5em; font-weight: lighter; position
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+<<<<<<< HEAD
   background-color: #fff;
+=======
+>>>>>>> GitHub/master
 }
 
 #fancybox-loading div {
   width: 44px;
   height: 44px;
+<<<<<<< HEAD
   background: url('//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/loader.gif?6143292873778010291') center center no-repeat;
+=======
+  background: url('//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/loader.gif?9450207911173904871') center center no-repeat;
+>>>>>>> GitHub/master
   background-size: 32px 32px;
   display: block !important;
 }
@@ -3270,7 +3654,11 @@ p.subtitle { font-size: 18px; line-height: 1.5em; font-weight: lighter; position
   height: 100%;
   cursor: pointer;
   text-decoration: none;
+<<<<<<< HEAD
   background: transparent url('//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/blank.gif?6143292873778010291'); /* helps IE */
+=======
+  background: transparent url('//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/blank.gif?9450207911173904871'); /* helps IE */
+>>>>>>> GitHub/master
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   z-index: 8040;
 }
@@ -3293,7 +3681,11 @@ p.subtitle { font-size: 18px; line-height: 1.5em; font-weight: lighter; position
   z-index: 8040;
   visibility: hidden;
   color: #333;
+<<<<<<< HEAD
   opacity: 0.8;
+=======
+  opacity: 0.6;
+>>>>>>> GitHub/master
   text-shadow: 0 0 1px #fff;
 }
 
@@ -3328,7 +3720,11 @@ p.subtitle { font-size: 18px; line-height: 1.5em; font-weight: lighter; position
   overflow: hidden;
   display: none;
   z-index: 8010;
+<<<<<<< HEAD
   background: url(//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/fancybox_overlay.png?6143292873778010291);
+=======
+  background: url(//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/fancybox_overlay.png?9450207911173904871);
+>>>>>>> GitHub/master
 }
 
 .fancybox-overlay-fixed {
@@ -3421,7 +3817,11 @@ p.subtitle { font-size: 18px; line-height: 1.5em; font-weight: lighter; position
 .cloudzoom-zoom {
   border:1px solid #888;
   box-shadow: -0px -0px 10px rgba(0,0,0,0.40);
+<<<<<<< HEAD
   background-color: #ffffff;
+=======
+  background-color: #000000;
+>>>>>>> GitHub/master
 }
 .cloudzoom-zoom-inside {
   border:none;
@@ -3438,7 +3838,11 @@ p.subtitle { font-size: 18px; line-height: 1.5em; font-weight: lighter; position
   font-size:11px;
 }
 .cloudzoom-blank {
+<<<<<<< HEAD
   background-image:url('//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/blank.gif?6143292873778010291');
+=======
+  background-image:url('//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/blank.gif?9450207911173904871');
+>>>>>>> GitHub/master
 }
 div.cloudzoom-ajax-loader {
   display: none;
@@ -3816,6 +4220,7 @@ div.cloudzoom-ajax-loader {
     .featured_links a span {
       font-size: 10px;
     }
+<<<<<<< HEAD
     .nav ul.menu li { padding: 3px 0 3px 3px;}
   }
 /* All Mobile Sizes (devices and browser) */
@@ -3823,6 +4228,13 @@ div.cloudzoom-ajax-loader {
     .nav_arrows { float: none; }
     .nav_arrows .prev { float: left; }
     .nav_arrows .next { float: right; }
+=======
+    .nav ul.menu li { padding: 3px; }
+    .dropdown { left: 3px; }
+  }
+/* All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 767px) {
+>>>>>>> GitHub/master
     .minus, .plus { display: none; }
     .minus { margin: 0 2px 0 0; }
     .plus { margin: 0 0 0 2px; }
@@ -3850,7 +4262,10 @@ div.cloudzoom-ajax-loader {
     }
     #header a.mobile_logo img {
       width: auto;
+<<<<<<< HEAD
       max-width: 150px;
+=======
+>>>>>>> GitHub/master
       max-height: 30px;
       padding-top: 2px;
     }
@@ -3865,16 +4280,22 @@ div.cloudzoom-ajax-loader {
     }
     #cart input.quantity { width: 24px; }
 
+<<<<<<< HEAD
       .flex-direction-nav .flex-next {opacity: 0.6; right: 15px;}
       .flex-direction-nav .flex-prev {opacity: 0.6; left: 15px;}
 
+=======
+>>>>>>> GitHub/master
     .is-absolute { top: 0px !important; }
     p.mm-counter {
       right: 20px;
     }
     #tag_filter, #sort-by, .breadcrumb_text {
       margin-bottom: 1em !important;
+<<<<<<< HEAD
       clear: both;
+=======
+>>>>>>> GitHub/master
     }
     .blog_filter { margin-top: 1em; width: 100% !important; }
     .section_select { text-align: center; }
@@ -3891,7 +4312,11 @@ div.cloudzoom-ajax-loader {
     }
     .mobile_hidden { display: none !important }
     table tr.order_summary td.label { text-align: left }
+<<<<<<< HEAD
     .feature_image .logo a, .feature_image .logo a:hover, .feature_image .logo a:visited, .feature_image .logo a:active {
+=======
+    .index .logo a, .index .logo a:hover, .index .logo a:visited, .index .logo a:active {
+>>>>>>> GitHub/master
       color: #ffffff;
     }
     .breadcrumb {
@@ -3941,6 +4366,25 @@ div.cloudzoom-ajax-loader {
     .container .column.thumbnail, .container .columns.thumbnail {
       margin-top: 1em;
     }
+<<<<<<< HEAD
+=======
+  table[style] {
+      width:auto !important;
+      max-width:100% !important;
+      overflow: hidden;
+    }
+  tr, td {
+      display:block;
+      width:99% !important;
+      max-width:99% !important;
+      padding:0px !important;
+      border-left: 0 !important;
+      border-right: 0 !important;
+    }
+  tr {
+    padding-bottom: 6px !important;
+  }
+>>>>>>> GitHub/master
   td {
     padding: 4px !important;
   }
@@ -3982,12 +4426,20 @@ div.cloudzoom-ajax-loader {
       display: none;
     }
   .headline {
+<<<<<<< HEAD
     font-size: 1.1em;
+=======
+    font-size: 0.9em;
+>>>>>>> GitHub/master
     line-height: 1.2em;
     position: relative;
   }
   p.subtitle {
+<<<<<<< HEAD
     font-size: 1.1em;
+=======
+    font-size: 0.8em;
+>>>>>>> GitHub/master
     line-height: 1.2em;
     position: relative;
   }
@@ -4023,11 +4475,29 @@ div.cloudzoom-ajax-loader {
       width: inherit;
       padding: 12px;
     }
+<<<<<<< HEAD
     .action_button {
       font-size: 12px;
     }
     h1, h2, h3, h4, h5, h6, .collection_title, .empty_cart {
       font-size: 90%;
+=======
+    .headline {
+        font-size: 0.9em;
+        line-height: 1.2em;
+      }
+    p.subtitle {
+      font-size: 0.7em;
+      line-height: 1.2em;
+      margin-bottom: 1em;
+    }
+    .action_button {
+      font-size: 12px;
+    }
+
+    h1, h2, h3, h4, h5, h6, .collection_title, .empty_cart {
+      font-size: 85%;
+>>>>>>> GitHub/master
       line-height: 1.5em;
     }
     h1, h1.home, h1.blog_title, .title a, h2 {
@@ -4042,6 +4512,7 @@ div.cloudzoom-ajax-loader {
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+<<<<<<< HEAD
   select.currencies {
     position: relative;
     top: 21px;
@@ -4056,6 +4527,12 @@ div.cloudzoom-ajax-loader {
     padding: 12px 15px 10px 55px;
     height: 60px;
   }
+=======
+  select#currencies {
+    position: relative;
+    top: 21px;
+  }
+>>>>>>> GitHub/master
 }
 
 .social_buttons, .social_buttons a {
@@ -4070,11 +4547,19 @@ div.cloudzoom-ajax-loader {
 
 @font-face {
   font-family: 'outofthesandbox';
+<<<<<<< HEAD
   src:url('//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/outofthesandbox.eot?6143292873778010291');
   src:url('//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/outofthesandbox.eot?%23iefix&6143292873778010291') format('embedded-opentype'),
     url('//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/outofthesandbox.woff?6143292873778010291') format('woff'),
     url('//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/outofthesandbox.ttf?6143292873778010291') format('truetype'),
     url('//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/outofthesandbox.svg%23outofthesandbox?6143292873778010291') format('svg');
+=======
+  src:url('//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/outofthesandbox.eot?9450207911173904871');
+  src:url('//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/outofthesandbox.eot?%23iefix&9450207911173904871') format('embedded-opentype'),
+    url('//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/outofthesandbox.woff?9450207911173904871') format('woff'),
+    url('//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/outofthesandbox.ttf?9450207911173904871') format('truetype'),
+    url('//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/outofthesandbox.svg%23outofthesandbox?9450207911173904871') format('svg');
+>>>>>>> GitHub/master
   font-weight: normal;
   font-style: normal;
 }
@@ -4095,6 +4580,10 @@ div.cloudzoom-ajax-loader {
   display: inline;
   margin-right: .2em;
   text-align: center;
+<<<<<<< HEAD
+=======
+  font-size: 14px;
+>>>>>>> GitHub/master
   padding-top: 0;
   -webkit-font-smoothing: antialiased;
 }
@@ -4107,6 +4596,7 @@ div.cloudzoom-ajax-loader {
 .icon-menu:before { content: '\e80d'; }
 .icon-down-arrow:before { content: '\e813'; }
 
+<<<<<<< HEAD
 .icon-check {
   display: block;
   float: left;
@@ -4117,6 +4607,8 @@ div.cloudzoom-ajax-loader {
 .icon-check-long {
   height: 60px;
 }
+=======
+>>>>>>> GitHub/master
 .search-submit {
   position: relative;
   left: 15px;
@@ -4129,7 +4621,10 @@ div.cloudzoom-ajax-loader {
   font-size: 32px;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> GitHub/master
 /*
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license
@@ -4167,6 +4662,7 @@ Copyright (c) 2013 Daniel Eden
   opacity: 0;
 }
 
+<<<<<<< HEAD
 .animate_right, .animate_left, .animate_up, .animate_down { opacity: 0 }
 
 .ie .animated, .ie .animate_right, .ie .animate_left, .ie .hsContent, .ie #slide-1 .animated { opacity: 1 !important; }
@@ -4182,6 +4678,17 @@ Copyright (c) 2013 Daniel Eden
        url('//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/ss-sandbox.woff?6143292873778010291') format('woff'),
        url('//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/ss-sandbox.ttf?6143292873778010291')  format('truetype'),
        url('//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/ss-sandbox.svg%23SSSandbox?6143292873778010291') format('svg');
+=======
+.animate_right, .animate_left { opacity: 0 }
+
+@font-face {
+  font-family: "SSSandbox";
+  src: url('//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/ss-sandbox.eot?9450207911173904871');
+  src: url('//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/ss-sandbox.eot?%23iefix&9450207911173904871') format('embedded-opentype'),
+       url('//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/ss-sandbox.woff?9450207911173904871') format('woff'),
+       url('//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/ss-sandbox.ttf?9450207911173904871')  format('truetype'),
+       url('//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/ss-sandbox.svg%23SSSandbox?9450207911173904871') format('svg');
+>>>>>>> GitHub/master
   font-weight: 400;
   font-style: normal;
 }
@@ -4223,6 +4730,7 @@ html:hover [class^="ss-"]{-ms-zoom: 1;}
 ================================================== */
 
 .hsContainer {
+<<<<<<< HEAD
   display: table;
   table-layout: fixed;
   width: 100%;
@@ -4238,19 +4746,41 @@ html:hover [class^="ss-"]{-ms-zoom: 1;}
   vertical-align: middle;
   text-align: center;
   float: none;
+=======
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    opacity: 1;
+}
+.hsContent {
+    max-width: 1180px;
+    margin: -150px auto 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    float: none;
+>>>>>>> GitHub/master
 }
 .hsContainer .left {
   text-align: left;
   padding-left: 40px;
+<<<<<<< HEAD
   float: none;
+=======
+>>>>>>> GitHub/master
 }
 .hsContainer .right {
   text-align: right;
   padding-right: 40px;
+<<<<<<< HEAD
   float: none;
 }
 .hsContainer a.action_button {
   padding: 10px 40px;
+=======
+>>>>>>> GitHub/master
 }
 .bcg {
     background-position: center center;
@@ -4259,6 +4789,7 @@ html:hover [class^="ss-"]{-ms-zoom: 1;}
     background-size: cover;
 }
 
+<<<<<<< HEAD
 #slide-1 .bcg {background-image:url(//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/slideshow_1.jpg?6143292873778010291)}
 #slide-1 .hsContainer { height: 400px; }
 #slide-2 .bcg {background-image:url(//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/slideshow_2.jpg?6143292873778010291)}
@@ -4278,6 +4809,20 @@ html:hover [class^="ss-"]{-ms-zoom: 1;}
 #slide-collection .bcg {background-image:url(//cdn.shopify.com/s/files/1/0750/6403/t/4/assets/slideshow_collection.jpg?6143292873778010291)}
 #slide-collection .hsContainer { height: 300px; }
 
+=======
+#slide-1 .bcg {background-image:url(//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/slideshow_1.jpg?9450207911173904871)}
+#slide-1 .hsContainer { height: 500px; }
+#slide-2 .bcg {background-image:url(//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/slideshow_2.jpg?9450207911173904871)}
+#slide-2 .hsContainer { height: 500px; }
+#slide-3 .bcg {background-image:url(//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/slideshow_3.jpg?9450207911173904871)}
+#slide-3 .hsContainer { height: 500px; }
+#slide-4 .bcg {background-image:url(//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/slideshow_4.jpg?9450207911173904871)}
+#slide-4 .hsContainer { height: 500px; }
+#slide-5 .bcg {background-image:url(//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/slideshow_5.jpg?9450207911173904871)}
+#slide-5 .hsContainer { height: 600px; }
+#slide-6 .bcg {background-image:url(//cdn.shopify.com/s/files/1/0750/6403/t/2/assets/slideshow_6.jpg?9450207911173904871)}
+#slide-6 .hsContainer { height: 600px; }
+>>>>>>> GitHub/master
 
 @media only screen and (max-width: 767px) {
   .delay-0s, .delay-025s, .delay-05s, .delay-075s, .delay-1s,
@@ -4288,6 +4833,7 @@ html:hover [class^="ss-"]{-ms-zoom: 1;}
     background-size: cover;
     background-attachment: scroll;
   }
+<<<<<<< HEAD
   #slide-1 .hsContainer { height: 160.0px }
   #slide-2 .hsContainer { height: 333.3333333333333px }
   #slide-3 .hsContainer { height: 333.3333333333333px }
@@ -4302,6 +4848,14 @@ html:hover [class^="ss-"]{-ms-zoom: 1;}
     padding: 2px 10px;
     font-size: 14px;
   }
+=======
+  #slide-1 .hsContainer { height: 333.3333333333333px }
+  #slide-2 .hsContainer { height: 333.3333333333333px }
+  #slide-3 .hsContainer { height: 333.3333333333333px }
+  #slide-4 .hsContainer { height: 333.3333333333333px }
+  #slide-5 .hsContainer { height: 400.0px }
+  #slide-6 .hsContainer { height: 400.0px }
+>>>>>>> GitHub/master
 }
 
 @media only screen

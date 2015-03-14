@@ -1,4 +1,5 @@
 {% if settings.notify_me_form %}
+<<<<<<< HEAD
   <div class="notify_form notify-form-{{ product.id }}" id="notify-form-{{ product.id }}" {% if product.available %}style="display:none"{% endif %}>
     {% form 'contact' %}
       {% if form.posted_successfully? %}
@@ -8,15 +9,34 @@
       {% else %}
         <p>
           <label for="contact[email]">{{ 'products.notify_form.description' | t }}:</label>
+=======
+  <div class="notify_form notify-form-{{ product.id }}" {% if product.available %}style="display:none"{% endif %}>
+    {% form 'contact' %}
+      {% if form.posted_successfully? %}
+        <p><em>Thanks! We will notify you when this product becomes available!</em></p>
+      {% elsif form.errors %}
+        <p><em>Please provide a valid email address.</em></p>
+      {% else %}
+        <p>
+          <label for="contact[email]">Notify me when this product is available:</label>
+>>>>>>> GitHub/master
 
           {% if customer %}
             <input type="hidden" name="contact[email]" value="{{ customer.email }}" />
           {% else %}
+<<<<<<< HEAD
             <input required type="email" name="contact[email]" id="contact[email]" placeholder="{{ 'products.notify_form.email' | t }}" value="{{ contact.fields.email }}" />
           {% endif %}
 
           <input type="hidden" name="contact[body]" class="notify_form_message" data-body="{{ 'products.notify_form.message_content' | t: product: product.title, url: canonical_url }}" value="{{ 'products.notify_form.message_content' | t: product: product.title, url: canonical_url }}" />
           <input class="action_button" type="submit" value="{{ 'products.notify_form.send' | t }}" style="margin-bottom:0px" />
+=======
+            <input required type="email" name="contact[email]" id="contact[email]" placeholder="Enter your email address..." value="{{ contact.fields.email }}" style="display:inline;margin-bottom:0px;width: 220px;" />
+          {% endif %}
+
+          <input type="hidden" name="contact[body]" value="Please notify me when {{ product.title | remove: '"' }} becomes available - {{ shop.url }}{{ product.url }}" />
+          <input class="submit" type="submit" value="Send" style="margin-bottom:0px" />
+>>>>>>> GitHub/master
         </p>
       {% endif %}
     {% endform %}

@@ -30,8 +30,13 @@
     {% assign src = article.content | split: 'src="' %}
     {% assign src = src[1] | split: '"' | first | remove: 'https:' | remove: 'http:' %}
     {% if src %}
+<<<<<<< HEAD
   <meta property="og:image" content="http:{{ src }}">
   <meta property="og:image:secure_url" content="https:{{ src }}">
+=======
+      <meta property="og:image" content="http:{{ src }}">
+      <meta property="og:image:secure_url" content="https:{{ src }}">
+>>>>>>> GitHub/master
     {% endif %}
   {% endif %}
 {% else %}
@@ -59,7 +64,11 @@
   <meta name="twitter:card" content="product">
   <meta name="twitter:title" content="{{ product.title }}">
   <meta name="twitter:description" content="{{ product.description | strip_html | truncatewords: 140, '' | escape }}">
+<<<<<<< HEAD
   <meta name="twitter:image" content="https:{{ product.featured_image.src | product_img_url: 'grande' }}">
+=======
+  <meta name="twitter:image" content="https:{{ product.featured_image.src | product_img_url: 'medium' }}">
+>>>>>>> GitHub/master
   <meta name="twitter:image:width" content="240">
   <meta name="twitter:image:height" content="240">
   <meta name="twitter:label1" content="Price">

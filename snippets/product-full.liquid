@@ -1,6 +1,7 @@
 {% for product in products %}
   {% capture left_product_layout %}
     <div class="product-{{ product.id }} section clearfix" itemscope itemtype="http://data-vocabulary.org/Product">
+<<<<<<< HEAD
        <div class="seven columns offset-by-two alpha animate_left">
         {% include 'product-images' %}
       </div>
@@ -10,6 +11,17 @@
        {% if settings.display_vendor %}
           <p class="vendor">
             <span itemprop="brand">{{ product.vendor | link_to_vendor }}</span>
+=======
+       <div class="seven columns offset-by-two alpha">
+        {% include 'product-images' %}
+      </div>
+
+     <div class="five columns omega">
+       <h2 class="product_name" itemprop="name"><a href="{{ product.url }}">{{ product.title }}</a></h2>
+       {% if settings.display_vendor %}
+          <p class="vendor">
+            <span class="label">by:</span> <span itemprop="brand">{{ product.vendor | link_to_vendor }}</span>
+>>>>>>> GitHub/master
           </p>
        {% endif %}
 
@@ -19,7 +31,11 @@
          <meta itemprop="seller" content="{{ shop.name | escape }}" />
          <meta itemprop="availability" content="{% if product.available %}in_stock{% else %}out_of_stock{% endif %}" />
 
+<<<<<<< HEAD
          <span class="sold_out">{% if variant.available == false %}{{ 'products.product.sold_out' | t }}{% endif %}</span>
+=======
+         <span class="sold_out">{% if variant.available == false %}{{ settings.sold_out_text }}{% endif %}</span>
+>>>>>>> GitHub/master
          <span itemprop="price" content="{{ variant.price | money_without_currency }}" class="{% if variant.compare_at_price > variant.price %}sale{% endif %}">
             <span class="current_price">
               {% if variant.available %}
@@ -53,11 +69,19 @@
 
   {% capture right_product_layout %}
     <div class="product-{{ product.id }} section clearfix" itemscope itemtype="http://data-vocabulary.org/Product">
+<<<<<<< HEAD
      <div class="five columns offset-by-two alpha animate_left">
        <h2 class="product_name" itemprop="name"><a href="{{ product.url }}">{{ product.title }}</a></h2>
        {% if settings.display_vendor %}
           <p class="vendor">
             <span itemprop="brand">{{ product.vendor | link_to_vendor }}</span>
+=======
+     <div class="five columns offset-by-two alpha">
+       <h2 class="product_name" itemprop="name"><a href="{{ product.url }}">{{ product.title }}</a></h2>
+       {% if settings.display_vendor %}
+          <p class="vendor">
+            <span class="label">by:</span> <span itemprop="brand">{{ product.vendor | link_to_vendor }}</span>
+>>>>>>> GitHub/master
           </p>
        {% endif %}
 
@@ -67,7 +91,11 @@
          <meta itemprop="seller" content="{{ shop.name | escape }}" />
          <meta itemprop="availability" content="{% if product.available %}in_stock{% else %}out_of_stock{% endif %}" />
 
+<<<<<<< HEAD
          <span class="sold_out">{% if variant.available == false %}{{ 'products.product.sold_out' | t }}{% endif %}</span>
+=======
+         <span class="sold_out">{% if variant.available == false %}{{ settings.sold_out_text }}{% endif %}</span>
+>>>>>>> GitHub/master
          <span itemprop="price" content="{{ variant.price | money_without_currency }}" class="{% if variant.compare_at_price > variant.price %}sale{% endif %}">
             <span class="current_price">
               {% if variant.available %}
@@ -97,7 +125,11 @@
 
       </div>
 
+<<<<<<< HEAD
       <div class="seven columns omega animate_right">
+=======
+      <div class="seven columns omega">
+>>>>>>> GitHub/master
         {% include 'product-images' %}
       </div>
     </div>

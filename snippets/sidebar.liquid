@@ -68,10 +68,17 @@
 
   {% assign tag_count = collection.all_tags | size %}
   {% if settings.filter_by_tag and tag_count > 0 %}
+<<<<<<< HEAD
     <h4 class="toggle"><span>+</span>{{ 'collections.sidebar.tags' | t }}</h4>
     <ul class="blog_list toggle_list">
       <li>
         <a {% unless current_tags %}class="active"{% endunless %} href="{% if collection.handle == "all" %}/collections/all{% else %}{{ collection.url }}{% endif %}">{{ 'collections.general.all_collection_title' | t: title: collection.title }}</a>
+=======
+    <h4 class="toggle"><span>+</span>{{ settings.tags_text }}</h4>
+    <ul class="blog_list toggle_list">
+      <li>
+        <a {% unless current_tags %}class="active"{% endunless %} href="{% if collection.handle == "all" %}/collections/all{% else %}{{ collection.url }}{% endif %}">All {{ collection.title }}</a>
+>>>>>>> GitHub/master
       </li>
       {% for tag in collection.all_tags %}
         {% unless tag contains 'meta-related-collection-' %}
@@ -85,7 +92,11 @@
 
 
   {% if settings.filter_by_category %}
+<<<<<<< HEAD
     <h4 class="toggle"><span>+</span>{{ 'collections.sidebar.collections' | t }}</h4>
+=======
+    <h4 class="toggle"><span>+</span>Collections</h4>
+>>>>>>> GitHub/master
     <ul class="blog_list toggle_list">
       {% for col in collections %}
         {% unless col.handle == 'frontpage' %}
@@ -96,7 +107,11 @@
   {% endif %}
 
   {% if settings.collection_sidebar_products %}
+<<<<<<< HEAD
     <h4 class="toggle"><span>+</span>{{ 'collections.sidebar.product_types' | t }}</h4>
+=======
+    <h4 class="toggle"><span>+</span>Products</h4>
+>>>>>>> GitHub/master
     <ul class="blog_list toggle_list">
       {% for product_type in shop.types %}
         <li {% if product_type == collection.title %}class="active"{% endif %}>{{ product_type | link_to_type }}</li>
@@ -105,7 +120,11 @@
   {% endif %}
 
   {% if settings.collection_sidebar_vendors %}
+<<<<<<< HEAD
     <h4 class="toggle"><span>+</span>{{ 'collections.sidebar.vendors' | t }}</h4>
+=======
+    <h4 class="toggle"><span>+</span>{{ settings.collection_sidebar_vendor_text }}</h4>
+>>>>>>> GitHub/master
     <ul class="blog_list toggle_list">
       {% for product_vendor in shop.vendors %}
         <li {% if product_vendor == collection.title %}class="active"{% endif %}>{{ product_vendor | link_to_vendor }}</li>

@@ -1,7 +1,11 @@
 {% layout settings.customer_layout %}
 
 <div class="sixteen columns clearfix collection_nav">
+<<<<<<< HEAD
   <h1 class="center">{{ 'customer.login.title' | t }}</h1>
+=======
+  <h1 class="center">Customer Login</h1>
+>>>>>>> GitHub/master
   <div class="feature_divider"></div>
 </div>
 
@@ -13,8 +17,13 @@
     {% form 'customer_login' %}
       {{ form.errors | default_errors }}
 
+<<<<<<< HEAD
       <label for="customer_email" class="login">{{ 'customer.login.email' | t }}</label>
       <input type="email" value="" name="customer[email]" id="customer_email" class="large" size="30"  autocorrect="off" autocapitalize="off" />
+=======
+      <label for="customer_email" class="login">Email Address</label>
+      <input type="email" value="" name="customer[email]" id="customer_email" class="large" size="30" />
+>>>>>>> GitHub/master
 
       {% if form.password_needed %}
 
@@ -22,37 +31,63 @@
           Customer Account Login
         {% endcomment %}
 
+<<<<<<< HEAD
         <small class="right"><em><a href="#" onclick="showRecoverPasswordForm()">{{ 'customer.login.forgot_password' | t }}</a></em></small>
         <label for="customer_password" class="login">{{ 'customer.login.password' | t }}</label>
+=======
+        <small class="right"><a href="#" onclick="showRecoverPasswordForm()">Forgot your password?</a></small>
+        <label for="customer_password" class="login">Password</label>
+>>>>>>> GitHub/master
         <input type="password" value="" name="customer[password]" id="customer_password" class="large password" size="16" />
 
       {% endif %}
 
+<<<<<<< HEAD
       <input class="btn action_button" type="submit" value="{{ 'customer.login.sign_in' | t }}" style="margin-bottom: 5px !important" />
 
       {% unless shop.checkout.guest_login %}
         <p class="right" style="padding-top: 10px;">
           {{ 'customer.login.new_customer_label' | t }} {{ 'customer.login.sign_up_html' | t | customer_register_link }}
+=======
+      <input class="btn action_button" type="submit" value="Login" style="margin-bottom: 5px !important" />
+
+      {% unless shop.checkout.guest_login %}
+        <p class="right" style="padding-top: 10px;">
+          New Customer? {{ 'Sign up &rarr;' | customer_register_link }}
+>>>>>>> GitHub/master
         </p>
       {% endunless %}
     {% endform %}
 
     {% if shop.checkout.guest_login %}
+<<<<<<< HEAD
       <span class="or"> {{ 'customer.login.or' | t }} </span>
       {% form 'guest_login' %}
         <input class="guest_button" type="submit" value="{{ 'customer.login.guest_title_html' | t }}" />
+=======
+      <span class="or"> or </span>
+      {% form 'guest_login' %}
+        <input class="guest_button" type="submit" value="Continue as Guest &rarr;" />
+>>>>>>> GitHub/master
       {% endform %}
     {% endif %}
   </div>
 
     <div id="recover-password" style='display:none'>
+<<<<<<< HEAD
       <div class="six columns offset-by-five animated fadeInUp">
 
         <h4>{{ 'customer.recover_password.title' | t }}</h4>
+=======
+      <div class="six columns">
+
+        <h4>Reset Password</h4>
+>>>>>>> GitHub/master
 
         {% form 'recover_customer_password' %}
           {{ form.errors | default_errors }}
 
+<<<<<<< HEAD
           {% if form.posted_successfully? %}
             {% assign reset_success = true %}
           {% endif %}
@@ -70,12 +105,31 @@
             <input class="btn action_button" type="submit" value="{{ 'customer.recover_password.submit' | t }}" />
             <span class="note">{{ 'customer.recover_password.or' | t }} <a href="#" onclick="hideRecoverPasswordForm()">{{ 'customer.recover_password.cancel' | t }}</a></span>
           </div>
+=======
+          <div id="recover_email" class="clearfix large_form">
+            <label for="email" class="large">Email Address</label>
+            <input type="email" value="" size="30" name="email" id="recover-email" class="large" />
+          </div>
+
+          <p>
+            <em class="note">We will send you an email to reset your password.</em>
+          </p>
+
+          <p class="action_bottom">
+            <input class="btn action_button" type="submit" value="Submit" />
+            <span class="note">or <a href="#" onclick="hideRecoverPasswordForm()">Cancel</a></span>
+          </p>
+>>>>>>> GitHub/master
         {% endform %}
       </div>
     </div>
   </div>
 </div>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> GitHub/master
 <br class="clear" />
 <br class="clear" />
 
@@ -93,9 +147,12 @@
   }
 
   if (window.location.hash == '#recover') { showRecoverPasswordForm() }
+<<<<<<< HEAD
 
   // reset_success is only true when the reset form is
   {% if reset_success %}
     document.getElementById('resetSuccess').style.display = 'block';
   {% endif %}
+=======
+>>>>>>> GitHub/master
 </script>

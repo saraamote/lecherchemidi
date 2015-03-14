@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% if settings.slideshow_blog_enabled %}
   <div id="slide-blog">
     <div class="bcg"
@@ -57,11 +58,31 @@
         </div>
       {% endif %}
     </div>
+=======
+{% paginate blog.articles by 10 %}
+
+  <div class="sixteen columns clearfix collection_nav">
+    <div class="twelve columns alpha">
+      <h1 class="collection_title"><a href="{{ blog.url }}" title="{{ blog.title | escape }}">{{ blog.title }}</a></h1>
+    </div>
+
+    {% if settings.blog_tags %}
+      <div class="four columns section_select omega">
+        <select name="tag_filter" id="tag_filter" class="blog_filter">
+          <option {% unless current_tags %}selected="selected"{% endunless %} value="{{ blog.url }}">All Categories</option>
+          {% for tag in blog.all_tags %}
+            <option {% if current_tags contains tag %}selected="selected"{% endif %} value="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}">{{ tag }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    {% endif %}
+>>>>>>> GitHub/master
   </div>
 
   {% for article in blog.articles %}
     <div class="sixteen columns article">
       <div class="five columns alpha omega blog_meta">
+<<<<<<< HEAD
         <h2><a href="{{ article.url }}" title="{{ article.title | escape }}">{{ article.title }}</a></h2>
 
         <p class="meta">
@@ -71,26 +92,49 @@
         {% if article.comments_enabled? %}
           <p class="meta">
             <a href="{{ article.url }}#comments">{{ 'blogs.counts.comments_with_count' | t: count: article.comments_count }}</a>
+=======
+        <h6>
+          {{ article.published_at | date: "%B %d, %Y" }}
+        </h6>
+
+        {% if article.comments_enabled? %}
+          <p>
+            <a href="{{ article.url }}#comments" class="title" title="{{ article.title | escape }} Comments">{{ article.comments_count }} {{ article.comments_count | pluralize: 'Comment', 'Comments' }}</a>
+>>>>>>> GitHub/master
           </p>
         {% endif %}
 
         {% if settings.blog_tags %}
           <p class="meta">
+<<<<<<< HEAD
             {% capture tags %}
               {% for tag in article.tags %}
                 <a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" title="{{ blog.title }} {{ 'blogs.general.tagged' | t }} {{ tag | escape }}" class="tag">{{ tag }}</a> &nbsp;
               {% endfor %}
             {% endcapture %}
             {{ 'blogs.article.posted_in_html' | t: tags: tags }}
+=======
+            {% for tag in article.tags %}
+              <a href="{{ shop.url }}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" title="{{ blog.title }} tagged {{ tag | escape }}" class="tag">{{ tag }} &rsaquo;</a>
+            {% endfor %}
+>>>>>>> GitHub/master
           </p>
         {% endif %}
 
       </div>
 
       <div class="ten columns alpha blog_content">
+<<<<<<< HEAD
         {% if article.excerpt != blank %}
           {{ article.excerpt }}
             <a href="{{ article.url }}" title="{{ article.title | escape }}">{{ 'blogs.general.continue_reading_html' | t }} <span class="icon-right-arrow"></span></a>
+=======
+        <h2><a href="{{ article.url }}" title="{{ article.title | escape }}">{{ article.title }}</a></h2>
+
+        {% if article.excerpt != blank %}
+          {{ article.excerpt }}
+          <a href="{{ article.url }}" title="{{ article.title | escape }}">View full article &rarr;</a>
+>>>>>>> GitHub/master
         {% else %}
           {{ article.content }}
         {% endif %}

@@ -3,7 +3,11 @@
 <div class="flexslider product_gallery product-{{ product.id }}-gallery {% if product-images == blank %}product_slider{% endif %} {% if settings.product_thumbs == false %}animated fadeInUp{% endif %}">
   <ul class="slides">
     {% for image in product.images %}
+<<<<<<< HEAD
       <li data-thumb="{{ image | product_img_url: '1024x1024' }}" data-title="{% if image.alt contains 'youtube' or image.alt contains 'vimeo' %}{{ product.title }}{% else %}{{ image.alt | escape }}{% endif %}">
+=======
+      <li data-thumb="{{ image | product_img_url: 'grande' }}" data-title="{% if image.alt contains 'youtube' or image.alt contains 'vimeo' %}{{ product.title }}{% else %}{{ image.alt | escape }}{% endif %}">
+>>>>>>> GitHub/master
         {% if image.alt contains 'youtube' or image.alt contains 'vimeo' %}
           {% assign src = image.alt | split: 'src="' %}
           {% assign src = src[1] | split: '"' | first %}
@@ -23,11 +27,18 @@
           </div>
         {% else %}
           <a href="{{ image | product_img_url: 'master' }}" class="fancybox" data-fancybox-group="{{ product.id }}" title="{{ image.alt | escape }}">
+<<<<<<< HEAD
             <img src="{{ 'loader.gif' | asset_url }}" data-src="{{ image | product_img_url: '1024x1024' }}" data-src-retina="{{ image | product_img_url: '2048x2048' }}" alt="{{ image.alt | escape }}" data-index="{{ forloop.index0 }}" data-image-id="{{ image.id }}" data-cloudzoom="zoomImage: '{{ image | product_img_url: 'master' }}', tintColor: '{{ settings.shop_bg_color }}', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250" class="cloudzoom {% if featured_image.id == image.id %}featured_image{% endif %}" />
+=======
+            <img src="{{ 'loader.gif' | asset_url }}" data-src="{{ image | product_img_url: 'grande' }}" data-src-retina="{{ image | product_img_url: '1024x1024' }}" alt="{{ image.alt | escape }}" data-index="{{ forloop.index0 }}" data-image-id="{{ image.id }}" data-cloudzoom="zoomImage: '{{ image | product_img_url: 'master' }}', tintColor: '{{ settings.shop_bg_color }}', zoomPosition: 'inside', zoomOffsetX: 0, touchStartDelay: 250" class="cloudzoom {% if featured_image.id == image.id %}featured_image{% endif %}" />
+>>>>>>> GitHub/master
           </a>
         {% endif %}
       </li>
     {% endfor %}
   </ul>
 </div>
+<<<<<<< HEAD
 &nbsp;
+=======
+>>>>>>> GitHub/master
